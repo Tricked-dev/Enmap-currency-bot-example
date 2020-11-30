@@ -1,0 +1,6 @@
+{
+  "token": "Discord bot token",
+  "prefix": "!",
+  "mongoPath": "Mongo pad here",
+  "ownerID": your id here
+}
