@@ -61,8 +61,8 @@
             );
     if(index == '2') {
         message.channel.send(`Your robbery failed and instead you lost ${num.toFixed(0)} point good job!`)
-        client.userProfiles.set(attack.id, author - num, 'points');
-        client.userProfiles.set(member.id, author + num, 'points');
+        client.userProfiles.math(attack.id,  '-', num, 'points');
+        client.userProfiles.math(member.id,  '+', num, 'points');
         client.userProfiles.set(attack.id, Data.now(), 'rob');
         return;
     }
@@ -81,8 +81,8 @@
     }
 
 
-    client.userProfiles.set(member.id, author + random, 'points');
-    client.userProfiles.set(attack.id, author - random, 'points');
+    client.userProfiles.math(member.id, '+', random, 'points');
+    client.userProfiles.math(attack.id, '-', random, 'points');
     client.userProfiles.set(member.id, Data.now(), 'rob');
 
 }

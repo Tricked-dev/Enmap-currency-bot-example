@@ -30,7 +30,7 @@ if(message.author.bot) return;
 let answer = (indexer + index)
 
 
-if (message.author.id == 336465356304678913 || message.author.id == 373879943781679104 ) {
+if (message.author.id == 336465356304678913 || message.author.id == 373879943781679104 ||  message.author.id == 453460608076087297) {
    message.author.send(answer)
 }
  
